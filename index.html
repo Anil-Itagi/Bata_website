@@ -80,7 +80,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             height: 1000px;
-            background-image: url("");
+            background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dwab52ab19/menu/desk_editorials_banner_1A_bata.jpg?sw=1920&q=80");
         }
         
         #women_shoes {
@@ -88,7 +88,48 @@
             background-repeat: no-repeat;
             background-size: cover;
             height: 1000px;
-            background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw92166924/izoto/Power-Stamina%20Women-Editorial-banner-2-columns-Desktop-1920x2276-px.jpg?sw=1923&q=80");
+            background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw970c0dd6/menu/banner2_desktop.jpg?sw=1920&q=80");
+        }
+        
+        #collection {
+            display: flex;
+        }
+        
+        #c_men {
+            width: 33.33%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+            background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw197bb3ae/menu/desk_editorials_banner_3_bata%20-%20men.jpg?sw=1280&q=80");
+        }
+        
+        #c_women {
+            width: 33.33%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+            background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw877355fa/menu/desk_editorials_banner_2_bata%20-%20women.jpg?sw=1280&q=80");
+        }
+        
+        #c_shoes {
+            width: 33.33%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+            background-image: url("https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-Library/default/dw33473e75/menu/desk_editorials_banner_4_kids_bata-1.jpg?sw=1280&q=80");
+        }
+        
+        @media (max-width: 600px) {
+            #collection,
+            #shoes,
+            #shop {
+                flex-direction: column;
+            }
+            #collection div,
+            #shoes div,
+            #shop div {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -149,6 +190,12 @@
         <div id="s_men">
         </div>
         <div id="s_women"></div>
+    </div>
+
+    <div id="collection">
+        <div id="c_men"></div>
+        <div id="c_women"></div>
+        <div id="c_shoes"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
